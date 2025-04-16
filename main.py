@@ -12,7 +12,7 @@ app = FastAPI()
 llm = ChatGroq(
     model="llama3-8b-8192",
     temperature=0,
-    groq_api_key=os.getenv("GROQ_API_KEY")
+    groq_api_key=os.getenv("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")
 )
 
 class SkinRequest(BaseModel):
