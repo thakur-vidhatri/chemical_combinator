@@ -1,0 +1,13 @@
+
+services:
+  - type: web
+    name: skincare-chemicals-api
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port 10000
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: GROQ_API_KEY
+        value: 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
